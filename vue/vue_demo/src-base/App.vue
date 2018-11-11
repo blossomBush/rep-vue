@@ -1,29 +1,24 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div>
+    <h2>第一个Vue组件化项目</h2>
+    <img src="./assets/logo.png" alt="logo" class="logo">
     <HelloWorld/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
   components: {
     HelloWorld
   }
 }
-
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
 </style>
